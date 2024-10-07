@@ -13,7 +13,7 @@ layout = html.Div(style={'background-color': 'GhostWhite', 'height': '100vh', 'p
                       dbc.Row(children=[
                           dbc.Col(children=[
                               html.H2('BRAIN IMAGE TUMOR SEGMENTATION PORTAL',
-                                      style={'textAlign': 'center', 'font-weight': 'bold', 'color': '#3B1C0A',
+                                      style={'textAlign': 'center', 'font-weight': 'bold', 'color': 'red',
                                              'font-size': '200%'}), ], )], justify='center'),
                       dbc.Container(style={'padding-top': '100px'}, children=[
                           dbc.Row(children=[
