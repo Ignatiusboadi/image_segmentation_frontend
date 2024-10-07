@@ -1,9 +1,5 @@
-# login.py
 from dash import dcc, html, Input, Output, State, callback
 from dash.exceptions import PreventUpdate
-
-from app import app
-
 import dash_bootstrap_components as dbc
 import requests
 import datetime
@@ -12,14 +8,14 @@ email_n = "Once the loading screen finishes, please check your email for a token
 
 # Layout for login page
 layout = html.Div(style={'background-color': 'GhostWhite', 'height': '100vh', 'padding-bottom': '100px',
-                         'padding-top': '50px', },
+                         'padding-top': '50px', 'background-image': 'url("/assets/brain_imag_bg.webp"'},
                   children=[
                       dbc.Row(children=[
                           dbc.Col(children=[
                               html.H2('BRAIN IMAGE TUMOR SEGMENTATION PORTAL',
                                       style={'textAlign': 'center', 'font-weight': 'bold', 'color': '#3B1C0A',
                                              'font-size': '200%'}), ], )], justify='center'),
-                      dbc.Container(style={'background-color': 'GhostWhite', 'padding-top': '100px'}, children=[
+                      dbc.Container(style={'padding-top': '100px'}, children=[
                           dbc.Row(children=[
                               dbc.Col(html.H2("Login", className="text-center mb-4"), width=12)]),
                           dbc.Row(children=[

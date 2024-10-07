@@ -8,7 +8,7 @@ FONT_AWESOME = (
 )
 
 app = dash.Dash(__name__, title='IMAGE SEGMENTATION', external_stylesheets=[themes.SIMPLEX, FONT_AWESOME],
-                meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
-                update_title=None, suppress_callback_exceptions=True)
+                meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}], update_title=None,
+                suppress_callback_exceptions=True, assets_folder='assets', assets_url_path='/assets/')
 
 server = app.server
