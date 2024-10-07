@@ -1,8 +1,8 @@
 import dash
 import dash_bootstrap_components.themes as themes
 
+api_url = 'http://127.0.0.1:8000'
 
-# icons source
 FONT_AWESOME = (
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 )
